@@ -2,14 +2,12 @@ plugins {
     id 'fabric-loom' version '1.5-SNAPSHOT'
     id 'maven-publish'
 }
-
 version = project.mod_version
 group = project.maven_group
 
 base {
     archivesName = project.archives_base_name
 }
-
 repositories {
     mavenCentral()
     maven {
@@ -21,7 +19,40 @@ repositories {
         }
     }
 }
+loom {
+    runs {
+        // This adds a new gradle task that runs the datagen API: "gradlew runDatagen"
+        datagen {
+            inherit server
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+            vmArg "-Dfabric-api.datagen.modid=miraclerpg"
 
+            runDir "build/datagen"
+        }
+
+        datagenClient {
+            inherit client
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+            vmArg "-Dfabric-api.datagen.modid=miraclerpg"
+
+            runDir "build/datagen"
+        }
+    }
+}
+// Add the generated resources to the main source set
+sourceSets {
+    main {
+        resources {
+            srcDirs += [
+                    'src/main/generated'
+            ]
+        }
+    }
+}
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -33,7 +64,6 @@ dependencies {
 
     modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.4:4.4.2'
 }
-
 processResources {
     inputs.property "version", project.version
     inputs.property "minecraft_version", project.minecraft_version
@@ -46,7 +76,6 @@ processResources {
                 "loader_version": project.loader_version
     }
 }
-
 def targetJavaVersion = 17
 tasks.withType(JavaCompile).configureEach {
     // ensure that the encoding is set to UTF-8, no matter what the system default is
@@ -58,7 +87,6 @@ tasks.withType(JavaCompile).configureEach {
         it.options.release.set(targetJavaVersion)
     }
 }
-
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     if (JavaVersion.current() < javaVersion) {
@@ -69,13 +97,11 @@ java {
     // If you remove this line, sources will not be generated.
     withSourcesJar()
 }
-
 jar {
     from("LICENSE") {
         rename { "${it}_${project.archivesBaseName}"}
     }
 }
-
 // configure the maven publication
 publishing {
     publications {
@@ -83,7 +109,6 @@ publishing {
             from components.java
         }
     }
-
     // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
         // Add repositories to publish to here.

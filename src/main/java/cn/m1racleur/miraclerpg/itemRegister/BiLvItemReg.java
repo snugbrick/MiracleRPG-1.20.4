@@ -37,7 +37,7 @@ public class BiLvItemReg {
             new Item.Settings(), itemUsageContext -> true, "§b位阶 3/4");
     public static final ToolItem biLvZhiRen4 = new SubSwordItem(new BiLvTools(),
             14, -2.4F,
-            new Item.Settings(), itemUsageContext -> true, "§b位阶 1/4");
+            new Item.Settings(), itemUsageContext -> true, "§b位阶 4/4");
     public static final Item biLvZhiZheng = new Item(new FabricItemSettings()
             .maxCount(64));
 

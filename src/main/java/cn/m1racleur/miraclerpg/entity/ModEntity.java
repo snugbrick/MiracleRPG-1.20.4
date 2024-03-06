@@ -53,9 +53,8 @@ public class ModEntity extends HostileEntity implements GeoEntity {
                 Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
-
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return null;
+        return instanceCache;
     }
 }

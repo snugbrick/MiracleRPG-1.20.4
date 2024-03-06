@@ -48,11 +48,6 @@ public class biLvXiLieItem extends Item {
     }
 
     @Override
-    public void onCraft(ItemStack stack, World world, PlayerEntity player) {
-        player.sendMessage(Text.of("你已成功制作出: " + stack.getItem().getName()));
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }

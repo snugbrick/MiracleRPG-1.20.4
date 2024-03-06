@@ -11,7 +11,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class ModEntityModels extends GeoModel<ModEntity> {
     @Override
     public Identifier getModelResource(ModEntity animatable) {
-        return new Identifier("miraclerpg", "models/entity/baoxiangguai1.geo.json");
+        return new Identifier("miraclerpg", "geo/baoxiangguai1.geo.json");
     }
 
     @Override

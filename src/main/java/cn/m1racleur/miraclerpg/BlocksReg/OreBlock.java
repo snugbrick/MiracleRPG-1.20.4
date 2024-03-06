@@ -15,8 +15,8 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
  * @version 1.0.0 2023.12.07 09:03
  */
 public class OreBlock {
-    public static final Block BiYuKuangShi = new ExperienceDroppingBlock(FabricBlockSettings.create().strength(4.0f), UniformIntProvider.create(4, 5));
-    public static final Block chiHongKuang = new ExperienceDroppingBlock(FabricBlockSettings.create().strength(4.0f), UniformIntProvider.create(4, 5));
+    public static final Block BiYuKuangShi = new ExperienceDroppingBlock(UniformIntProvider.create(4, 5), FabricBlockSettings.create().strength(4.0f));
+    public static final Block chiHongKuang = new ExperienceDroppingBlock(UniformIntProvider.create(4, 5), FabricBlockSettings.create().strength(4.0f));
     public static final Block chiTieKuang = new Block(FabricBlockSettings.create().strength(4.0f));
     public static final Block chiXueTong = new Block(FabricBlockSettings.create().strength(4.0f));
     public static final Block dianlankuang = new Block(FabricBlockSettings.create().strength(4.0f));

@@ -4,6 +4,7 @@
   "package": "cn.m1racleur.miraclerpg.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "Mixin"
   ],
   "client": [
   ],

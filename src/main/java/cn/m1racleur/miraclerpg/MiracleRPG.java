@@ -2,6 +2,8 @@ package cn.m1racleur.miraclerpg;
 
 import cn.m1racleur.miraclerpg.ArmorReg.AusterityReg;
 import cn.m1racleur.miraclerpg.BlocksReg.OreBlock;
+import cn.m1racleur.miraclerpg.entity.ModEntities;
+import cn.m1racleur.miraclerpg.entity.ModEntity;
 import cn.m1racleur.miraclerpg.itemGroupReg.RPGitemGroup;
 import cn.m1racleur.miraclerpg.itemGroupReg.SimpleItemsGroupReg;
 import cn.m1racleur.miraclerpg.itemRegister.*;
@@ -9,8 +11,11 @@ import cn.m1racleur.miraclerpg.listener.RegisterLis;
 import cn.m1racleur.miraclerpg.miracleEnchant.MiracleSharp;
 import cn.m1racleur.miraclerpg.world.feature.OreFeatures;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.minecraft.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib.GeckoLib;
 
 /**
  * @author MiracleUR -> github.com/snugbrick
@@ -23,6 +28,7 @@ public class MiracleRPG implements ModInitializer {
     @Override
     public void onInitialize() {
         boolean initRet = init();
+        GeckoLib.initialize();
 
         if (initRet) {
             LOGGER.info("MiracleRPG has been initialized!");
@@ -56,6 +62,11 @@ public class MiracleRPG implements ModInitializer {
         //矿脉
         OreFeatures biYuConfigFeatures = new OreFeatures();
         biYuConfigFeatures.oreReg();
+
+        Item item = EntityEggsItem.CHOMPER_SPAWN_EGG;
+
+        FabricDefaultAttributeRegistry.register(ModEntities.modEntity, ModEntity.setAttribute());
+
         return true;
     }
 }
