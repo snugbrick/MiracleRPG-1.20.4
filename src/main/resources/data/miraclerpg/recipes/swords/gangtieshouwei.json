@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " ! "
+  ],
+  "key": {
+    "#": {
+      "item": "miraclerpg:chihongzhiren"
+    },
+    "!": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "miraclerpg:gangtieshouwei",
+    "count": 1
+  }
+}

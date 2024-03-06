@@ -1,0 +1,143 @@
+package cn.m1racleur.miraclerpg.itemRegister;
+
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+/**
+ * @author MiracleUR -> github.com/snugbrick
+ * @version 1.0.0 2023.12.07 13:55
+ */
+public class SimpleItem {
+    public static void ItemsRegister() {
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "burongbing"), buRongBing);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chilun0"), chiLun0);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chilun1"), chilun1);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chilun2"), chilun2);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chilun3"), chilun3);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chilun4"), chilun4);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chilun5"), chilun5);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chuangweijinghua"), chuangWeiJingHua);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "chujijinghua"), chuJiJingHua);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "dianqishi"), dianQiShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "duanshending"), duanShenDing);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "duanshenshi"), duanShenShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "emojianiang"), emoJianiang);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "gaojijinghua"), gaoJiJingHua);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "haijingshi"), haiJingShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "hailanzhenzhu"), haiLanZhenZhu);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "hunzhi"), hunZhi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "huoshenningjing"), huoShenNingJing);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinbi"), jinBi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan1"), jinJieDan1);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan2"), jinJieDan2);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan3"), jinJieDan3);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan4"), jinJieDan4);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan5"), jinJieDan5);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan6"), jinJieDan6);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan7"), jinJieDan7);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinjiedan8"), jinJieDan8);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinqian"), jinQian);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jinqingshi"), jinQingShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "keertesi"), keErTeSi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "lannie"), lanNie);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "lanseyumao"), lanSeYuMao);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "laojuanzhou"), laoJuanZhou);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "leiminghunti"), leiMingHunTi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "lihe1"), liHe1);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "lihe2"), liHe2);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "lihe3"), liHe3);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "mofabingjing"), moFaBingJing);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "mojingshi"), moJingShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "mojingsuikuai"), moJingSuiKuai);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "nengliangjiejing"), nengLiangJieJing);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "qiguaibing"), qiGuaiBing);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "rongyaosuipian"), rongYaoSuiPian);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shandianjinghua"), shanDianJingHua);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shenmizhuishi"), shenMiZhuiShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shilaimushi"), shiLaiMuShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shishibaozhu"), shiShiBaoZhu);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shourou"), shouRou);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shizijunzhoufu"), shiZiJunZhouFu);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "shuijingsuipian"), shuiJingSuiPian);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "tongqian"), tongQian);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yaoshi1"), yaoShi1);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yaoshi2"), yaoShi2);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yaoshi3"), yaoShi3);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yinqian"), yinQian);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yuanguhunsuipian"), yuanGuHunSuiPian);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yuansuyaoshi"), yuanSuYaoShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "yueguangshi"), yueGuangShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "zhongjijinghua"), zhongJiJingHua);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "zijingshi"), ziJingShi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "ziranjinghua"), ziRanJingHua);
+
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jingyanka"), jingyanka);
+    }
+
+    public static final Item jingyanka = new Item(new FabricItemSettings().maxCount(64));
+
+    public static final Item buRongBing = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chiLun0 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chilun1 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chilun2 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chilun3 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chilun4 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chilun5 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chuangWeiJingHua = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item chuJiJingHua = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item zhongJiJingHua = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item gaoJiJingHua = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item dianQiShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item duanShenDing = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item duanShenShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item emoJianiang = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item haiJingShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item haiLanZhenZhu = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item hunZhi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item huoShenNingJing = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinBi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan1 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan2 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan3 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan4 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan5 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan6 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan7 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinJieDan8 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinQian = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item jinQingShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item keErTeSi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item lanNie = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item lanSeYuMao = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item laoJuanZhou = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item leiMingHunTi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item liHe1 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item liHe2 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item liHe3 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item moFaBingJing = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item moJingShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item moJingSuiKuai = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item nengLiangJieJing = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item qiGuaiBing = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item rongYaoSuiPian = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shanDianJingHua = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shenMiZhuiShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shiLaiMuShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shiShiBaoZhu = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shouRou = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shiZiJunZhouFu = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item shuiJingSuiPian = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item tongQian = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yaoShi1 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yaoShi2 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yaoShi3 = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yinQian = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yuanGuHunSuiPian = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yuanSuYaoShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item yueGuangShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item ziJingShi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item ziRanJingHua = new Item(new FabricItemSettings().maxCount(64));
+}

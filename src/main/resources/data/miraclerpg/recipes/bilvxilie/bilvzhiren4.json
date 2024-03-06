@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "@!@",
+    "!#!",
+    "@!@"
+  ],
+  "key": {
+    "#": {
+      "item": "miraclerpg:bilvzhiren3"
+    },
+    "!": {
+      "item": "miraclerpg:gaojijinghua"
+    },
+    "@": {
+      "item": "miraclerpg:zhongjijinghua"
+    }
+  },
+  "result": {
+    "item": "miraclerpg:bilvzhiren4",
+    "count": 1
+  }
+}

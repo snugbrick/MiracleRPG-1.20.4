@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "miraclerpg:zhongjijinghua"
+    }
+  },
+  "result": {
+    "item": "miraclerpg:gaojijinghua",
+    "count": 1
+  }
+}
