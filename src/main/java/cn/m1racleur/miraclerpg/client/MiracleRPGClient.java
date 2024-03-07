@@ -22,9 +22,9 @@ public class MiracleRPGClient implements ClientModInitializer {
             LOGGER.info("MiracleRPG has been initialized!");
         }
     }
-
     private boolean init() {
         EntityRendererRegistry.register(ModEntities.modEntity, ModEntityRenderer::new);
+        LOGGER.info("entities loading completed");
 
         return true;
     }

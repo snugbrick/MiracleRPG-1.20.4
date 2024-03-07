@@ -3,13 +3,33 @@
 	"animations": {
 		"animation.baoxiangguai1.walk": {
 			"loop": true,
-			"animation_length": 1,
+			"animation_length": 0.96,
+			"start_delay": "0",
+			"loop_delay": "0",
+			"bones": {
+				"bb_main": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.16": [0, 10.5, 0],
+						"0.48": [0, 17, 0],
+						"0.8": [0, 2.5, 0],
+						"0.96": [0, 0, 0]
+					}
+				}
+			},
+			"particle_effects": {}
+		},
+		"animation.baoxiangguai1.idle": {
+			"loop": true,
+			"animation_length": 1.2,
 			"bones": {
 				"bone": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"0.5": [-27.5, 0, 0],
-						"1.0": [0, 0, 0]
+						"0.24": [-20.83, 0, 0],
+						"0.6": [-32.5, 0, 0],
+						"1.08": [-0.83, 0, 0],
+						"1.2": [0, 0, 0]
 					}
 				}
 			}

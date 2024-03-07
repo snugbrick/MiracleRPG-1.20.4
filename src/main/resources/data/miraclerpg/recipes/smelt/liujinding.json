@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "miraclerpg:liujinkuang"
+  },
+  "result": "miraclerpg:liujinding",
+  "experience": 0.1,
+  "cookingtime": 200
+}

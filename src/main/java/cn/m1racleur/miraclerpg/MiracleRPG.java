@@ -24,7 +24,6 @@ import software.bernie.geckolib.GeckoLib;
 public class MiracleRPG implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("miraclerpg");
 
-
     @Override
     public void onInitialize() {
         boolean initRet = init();
@@ -42,30 +41,36 @@ public class MiracleRPG implements ModInitializer {
         DianLanItemReg.registerItem();//物品注册
         SimpleItem.ItemsRegister();
         OtherSwords.reg();
+        LOGGER.info("items & swords loading completed");
 
         AusterityReg.ArmorRegister();//盔甲注册
+        LOGGER.info("armor loading completed");
 
         OreBlock.BlocksRegister();//方块注册
+        LOGGER.info("blocks loading completed");
 
         RPGitemGroup.GroupRegister();//物品组注册
+        LOGGER.info("itemGroup loading completed");
 
         MiracleSharp MS = new MiracleSharp();
         MS.EnchantRegister();//附魔注册
+        LOGGER.info("enchant loading completed");
 
         new RegisterLis();//监听器注册
+        LOGGER.info("listener loading completed");
         SimpleItemsGroupReg.pullFieldInItem(); //批量将物品压入数组
         SimpleItemsGroupReg.pullFieldInSword();
         SimpleItemsGroupReg.pullFieldInBlocks();
 
-        //ZombieEntity.entityReg();//注册实体
-
         //矿脉
         OreFeatures biYuConfigFeatures = new OreFeatures();
         biYuConfigFeatures.oreReg();
+        LOGGER.info("OreFeatures loading completed");
 
         Item item = EntityEggsItem.CHOMPER_SPAWN_EGG;
 
         FabricDefaultAttributeRegistry.register(ModEntities.modEntity, ModEntity.setAttribute());
+        LOGGER.info("entities loading completed");
 
         return true;
     }

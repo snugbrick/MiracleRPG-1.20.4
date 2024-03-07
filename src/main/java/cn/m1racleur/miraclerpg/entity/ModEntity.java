@@ -1,8 +1,7 @@
 package cn.m1racleur.miraclerpg.entity;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.ActiveTargetGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
@@ -28,12 +27,17 @@ public class ModEntity extends HostileEntity implements GeoEntity {
 
     public static DefaultAttributeContainer.Builder setAttribute() {
         return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 20);
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 20)
+                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2);
+
     }
 
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
+        this.goalSelector.add(1, new MeleeAttackGoal(this, 0.7D, false));
+        this.goalSelector.add(1, new WanderAroundGoal(this, 0.7F, 1));
+        this.goalSelector.add(1, new LookAroundGoal(this));
 
         this.goalSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
@@ -53,6 +57,7 @@ public class ModEntity extends HostileEntity implements GeoEntity {
                 Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
+
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return instanceCache;
