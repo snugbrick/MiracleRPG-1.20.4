@@ -20,13 +20,19 @@ public class BiLvItemReg {
     public static final ToolItem biLvZhiRen = new SubSwordItem(new BiLvTools(),
             8, -2.4F,
             new Item.Settings(), playerEntity -> {
-        if (playerEntity != null && playerEntity.getHealth() <= 15.0F) {
-            playerEntity.setHealth(playerEntity.getHealth() + 5.0F);
-            playerEntity.sendMessage(Text.of("§a碧绿之力使你感到振奋"));
-        } else if (playerEntity != null && playerEntity.getHealth() <= 20.0F && playerEntity.getHealth() > 15.0F) {
-            playerEntity.setHealth(20.0F);
-            playerEntity.sendMessage(Text.of("§a碧绿之力使你感到振奋"));
+        if (playerEntity != null) {
+            playerEntity.getItemCooldownManager().update();
+        } else {
+            return false;
         }
+        if (playerEntity.getHealth() <= 15.0F) {
+            playerEntity.setHealth(playerEntity.getHealth() + 5.0F);
+        } else if (playerEntity.getHealth() <= 20.0F && playerEntity.getHealth() > 15.0F) {
+            playerEntity.setHealth(20.0F);
+        }
+        playerEntity.sendMessage(Text.of("§a碧绿之力使你感到振奋"));
+        playerEntity.getItemCooldownManager().set(playerEntity.getMainHandStack().getItem(), 100);
+        playerEntity.getItemCooldownManager().update();
         return true;
     }, "§b位阶 1/4", "§6\"生命的流光在此乍现\"");
     public static final ToolItem biLvZhiRen2 = new SubSwordItem(new BiLvTools(),
