@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "miraclerpg:reqiqiuxiao",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642156474,
+
+    "spacing": 20,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

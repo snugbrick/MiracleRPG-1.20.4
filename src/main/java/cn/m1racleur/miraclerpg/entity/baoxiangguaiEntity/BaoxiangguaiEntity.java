@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity;
+package cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -18,10 +18,10 @@ import software.bernie.geckolib.core.object.PlayState;
  * @author MiracleUR -> github.com/snugbrick
  * @version 1.0.0 2024.03.06 12:07
  */
-public class ModEntity extends HostileEntity implements GeoEntity {
+public class BaoxiangguaiEntity extends HostileEntity implements GeoEntity {
     private final AnimatableInstanceCache instanceCache = new SingletonAnimatableInstanceCache(this);
 
-    protected ModEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public BaoxiangguaiEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 

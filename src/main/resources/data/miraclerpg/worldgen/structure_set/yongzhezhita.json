@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "miraclerpg:yongzhezhita",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642166474,
+
+    "spacing": 20,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,7 +1,7 @@
 package cn.m1racleur.miraclerpg.client;
 
 import cn.m1racleur.miraclerpg.entity.ModEntities;
-import cn.m1racleur.miraclerpg.entity.entityModels.ModEntityRenderer;
+import cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity.BaoxiangguaiEntityRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import org.slf4j.Logger;
@@ -23,7 +23,7 @@ public class MiracleRPGClient implements ClientModInitializer {
         }
     }
     private boolean init() {
-        EntityRendererRegistry.register(ModEntities.modEntity, ModEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.modEntity, BaoxiangguaiEntityRenderer::new);
         LOGGER.info("entities loading completed");
 
         return true;

@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "miraclerpg:chengbaoda1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136475,
+
+    "spacing": 20,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

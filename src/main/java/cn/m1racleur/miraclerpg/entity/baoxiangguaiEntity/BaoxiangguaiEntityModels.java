@@ -1,6 +1,5 @@
-package cn.m1racleur.miraclerpg.entity.entityModels;
+package cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity;
 
-import cn.m1racleur.miraclerpg.entity.ModEntity;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;
 
@@ -8,19 +7,19 @@ import software.bernie.geckolib.model.GeoModel;
  * @author MiracleUR -> github.com/snugbrick
  * @version 1.0.0 2024.03.06 14:35
  */
-public class ModEntityModels extends GeoModel<ModEntity> {
+public class BaoxiangguaiEntityModels extends GeoModel<BaoxiangguaiEntity> {
     @Override
-    public Identifier getModelResource(ModEntity animatable) {
+    public Identifier getModelResource(BaoxiangguaiEntity animatable) {
         return new Identifier("miraclerpg", "geo/baoxiangguai1.geo.json");
     }
 
     @Override
-    public Identifier getTextureResource(ModEntity animatable) {
+    public Identifier getTextureResource(BaoxiangguaiEntity animatable) {
         return new Identifier("miraclerpg", "textures/entity/baoxiangguai1.png");
     }
 
     @Override
-    public Identifier getAnimationResource(ModEntity animatable) {
+    public Identifier getAnimationResource(BaoxiangguaiEntity animatable) {
         return new Identifier("miraclerpg", "animations/baoxiangguai1.animation.json");
     }
 }

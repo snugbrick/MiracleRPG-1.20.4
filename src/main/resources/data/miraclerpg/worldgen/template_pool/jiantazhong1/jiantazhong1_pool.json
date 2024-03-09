@@ -1,0 +1,22 @@
+{
+  "name": "miraclerpg:jiantazhong1/jiantazhong1_pool",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+
+      "weight": 1,
+      "element": {
+
+        "location": "miraclerpg:jiantazhong1",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "miraclerpg:fangzizhong1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136414,
+
+    "spacing": 20,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

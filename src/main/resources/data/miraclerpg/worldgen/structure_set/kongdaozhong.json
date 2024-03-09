@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "miraclerpg:kongdaozhong",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642146474,
+
+    "spacing": 20,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

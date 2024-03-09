@@ -1,5 +1,6 @@
 package cn.m1racleur.miraclerpg.entity;
 
+import cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity.BaoxiangguaiEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -13,8 +14,8 @@ import net.minecraft.util.Identifier;
  * @version 1.0.0 2024.03.07 00:46
  */
 public class ModEntities {
-    public static final EntityType<ModEntity> modEntity = Registry.register(Registries.ENTITY_TYPE,
+    public static final EntityType<BaoxiangguaiEntity> modEntity = Registry.register(Registries.ENTITY_TYPE,
             new Identifier("miraclerpg", "baoxiangguai1"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, ModEntity::new)
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, BaoxiangguaiEntity::new)
                     .dimensions(EntityDimensions.fixed(0.4f, 1.5f)).build());
 }
