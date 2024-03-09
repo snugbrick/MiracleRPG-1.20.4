@@ -1,3 +1,189 @@
 # 项目排除路径
 /.gradle/
 /build/
+/.idea/.gitignore
+/run/saves/新的世界 (1)/playerdata/0ef61a2a-d91b-37b4-a10d-af67b917d543.dat
+/run/saves/新的世界 (1)/advancements/0ef61a2a-d91b-37b4-a10d-af67b917d543.json
+/run/saves/新的世界 (1)/stats/0ef61a2a-d91b-37b4-a10d-af67b917d543.json
+/run/saves/新的世界 (1)/playerdata/4c4af65a-e991-33a8-a762-2d145c215578.dat
+/run/saves/新的世界 (1)/playerdata/4c4af65a-e991-33a8-a762-2d145c215578.dat_old
+/run/saves/新的世界 (1)/advancements/4c4af65a-e991-33a8-a762-2d145c215578.json
+/run/saves/新的世界 (1)/stats/4c4af65a-e991-33a8-a762-2d145c215578.json
+/run/saves/新的世界 (1)/playerdata/4f2b9d55-5b3e-32ee-ad58-c8df44a23337.dat
+/run/saves/新的世界 (1)/playerdata/4f2b9d55-5b3e-32ee-ad58-c8df44a23337.dat_old
+/run/saves/新的世界 (1)/advancements/4f2b9d55-5b3e-32ee-ad58-c8df44a23337.json
+/run/saves/新的世界 (1)/stats/4f2b9d55-5b3e-32ee-ad58-c8df44a23337.json
+/run/saves/新的世界3/playerdata/90bb5d97-9dd4-3b7b-a71d-c51bbf8a4878.dat
+/run/saves/新的世界3/playerdata/90bb5d97-9dd4-3b7b-a71d-c51bbf8a4878.dat_old
+/run/saves/新的世界3/advancements/90bb5d97-9dd4-3b7b-a71d-c51bbf8a4878.json
+/run/saves/新的世界3/stats/90bb5d97-9dd4-3b7b-a71d-c51bbf8a4878.json
+/run/logs/2024-03-06-1.log.gz
+/run/logs/2024-03-06-2.log.gz
+/run/logs/2024-03-06-3.log.gz
+/run/logs/2024-03-06-4.log.gz
+/run/logs/2024-03-06-5.log.gz
+/run/logs/2024-03-06-6.log.gz
+/run/logs/2024-03-07-1.log.gz
+/run/logs/2024-03-07-2.log.gz
+/run/logs/2024-03-07-3.log.gz
+/run/logs/2024-03-07-4.log.gz
+/run/logs/2024-03-07-5.log.gz
+/run/logs/2024-03-07-6.log.gz
+/run/logs/2024-03-09-1.log.gz
+/run/logs/2024-03-09-2.log.gz
+/run/logs/2024-03-09-3.log.gz
+/run/logs/2024-03-09-4.log.gz
+/run/logs/2024-03-09-5.log.gz
+/run/logs/2024-03-09-6.log.gz
+/src/main/generated/.cache/b488fae487de22e3fba20dd3fe25572e12bf07ba
+/.idea/codeStyles/codeStyleConfig.xml
+/run/command_history.txt
+/.idea/compiler.xml
+/run/crash-reports/crash-2024-03-07_01.18.02-client.txt
+/run/crash-reports/crash-2024-03-07_01.20.01-client.txt
+/run/crash-reports/crash-2024-03-07_01.22.05-client.txt
+/run/crash-reports/crash-2024-03-07_01.24.06-client.txt
+/run/crash-reports/crash-2024-03-07_01.29.01-client.txt
+/run/crash-reports/crash-2024-03-07_01.32.28-client.txt
+/run/crash-reports/crash-2024-03-07_01.37.20-client.txt
+/run/crash-reports/crash-2024-03-07_01.39.22-client.txt
+/run/crash-reports/crash-2024-03-07_01.44.56-client.txt
+/run/crash-reports/crash-2024-03-07_02.03.09-client.txt
+/run/crash-reports/crash-2024-03-07_02.08.32-client.txt
+/run/crash-reports/crash-2024-03-07_22.30.04-server.txt
+/run/crash-reports/crash-2024-03-09_14.28.27-client.txt
+/run/saves/新的世界 (2)/playerdata/d3ee42bb-6490-3bf6-992c-01b42b8a0039.dat
+/run/saves/新的世界 (2)/playerdata/d3ee42bb-6490-3bf6-992c-01b42b8a0039.dat_old
+/run/saves/新的世界 (2)/advancements/d3ee42bb-6490-3bf6-992c-01b42b8a0039.json
+/run/saves/新的世界 (2)/stats/d3ee42bb-6490-3bf6-992c-01b42b8a0039.json
+/.idea/runConfigurations/Data_Generation.xml
+/run/logs/debug.log
+/run/logs/debug-1.log.gz
+/run/logs/debug-2.log.gz
+/run/logs/debug-3.log.gz
+/run/logs/debug-4.log.gz
+/run/logs/debug-5.log.gz
+/src/main/generated/.cache/eb03f8efd3ee8e0efae57aac07143f650ccadd57
+/run/data/fabricDefaultResourcePacks.dat
+/src/main/generated/.cache/fb650b67a551479bd75c1b2979ebf2e921b3f100
+/.idea/git_toolbox_prj.xml
+/.idea/gradle.xml
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/run/saves/新的世界 (1)/icon.png
+/run/saves/新的世界 (2)/icon.png
+/run/saves/新的世界3/icon.png
+/run/config/fabric/indigo-renderer.properties
+/.idea/intellij-javadocs-4.0.1.xml
+/.idea/jarRepositories.xml
+/.idea/JavaSceneConfigState.xml
+/.idea/jsonSchemas.xml
+/run/logs/latest.log
+/run/saves/新的世界 (1)/level.dat
+/run/saves/新的世界 (2)/level.dat
+/run/saves/新的世界3/level.dat
+/run/saves/新的世界 (1)/level.dat_old
+/run/saves/新的世界 (2)/level.dat_old
+/run/saves/新的世界3/level.dat_old
+/run/downloads/log.json
+/.idea/runConfigurations/Minecraft_Client.xml
+/.idea/runConfigurations/Minecraft_Server.xml
+/.idea/modules/MiracleRPG-1.20.2.main.iml
+/.idea/modules/MiracleRPG-1.20.2.test.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/run/options.txt
+/.idea/codeStyles/Project.xml
+/run/saves/新的世界 (1)/entities/r.0.0.mca
+/run/saves/新的世界 (1)/poi/r.0.0.mca
+/run/saves/新的世界 (1)/region/r.0.0.mca
+/run/saves/新的世界 (2)/entities/r.0.0.mca
+/run/saves/新的世界 (2)/poi/r.0.0.mca
+/run/saves/新的世界 (2)/region/r.0.0.mca
+/run/saves/新的世界3/entities/r.0.0.mca
+/run/saves/新的世界3/poi/r.0.0.mca
+/run/saves/新的世界3/region/r.0.0.mca
+/run/saves/新的世界 (2)/region/r.0.1.mca
+/run/saves/新的世界3/region/r.0.1.mca
+/run/saves/新的世界 (1)/entities/r.0.-1.mca
+/run/saves/新的世界 (1)/poi/r.0.-1.mca
+/run/saves/新的世界 (1)/region/r.0.-1.mca
+/run/saves/新的世界 (2)/entities/r.0.-1.mca
+/run/saves/新的世界 (2)/region/r.0.-1.mca
+/run/saves/新的世界3/entities/r.0.-1.mca
+/run/saves/新的世界3/poi/r.0.-1.mca
+/run/saves/新的世界3/region/r.0.-1.mca
+/run/saves/新的世界3/entities/r.0.-2.mca
+/run/saves/新的世界3/region/r.0.-2.mca
+/run/saves/新的世界 (1)/region/r.2.4.mca
+/run/saves/新的世界 (1)/poi/r.2.5.mca
+/run/saves/新的世界 (1)/region/r.2.5.mca
+/run/saves/新的世界 (1)/region/r.2.6.mca
+/run/saves/新的世界 (1)/entities/r.3.4.mca
+/run/saves/新的世界 (1)/poi/r.3.4.mca
+/run/saves/新的世界 (1)/region/r.3.4.mca
+/run/saves/新的世界 (1)/entities/r.3.5.mca
+/run/saves/新的世界 (1)/poi/r.3.5.mca
+/run/saves/新的世界 (1)/region/r.3.5.mca
+/run/saves/新的世界 (1)/poi/r.3.6.mca
+/run/saves/新的世界 (1)/region/r.3.6.mca
+/run/saves/新的世界 (1)/entities/r.4.4.mca
+/run/saves/新的世界 (1)/poi/r.4.4.mca
+/run/saves/新的世界 (1)/region/r.4.4.mca
+/run/saves/新的世界 (1)/entities/r.4.5.mca
+/run/saves/新的世界 (1)/poi/r.4.5.mca
+/run/saves/新的世界 (1)/region/r.4.5.mca
+/run/saves/新的世界 (1)/poi/r.4.6.mca
+/run/saves/新的世界 (1)/region/r.4.6.mca
+/run/saves/新的世界 (1)/entities/r.-1.0.mca
+/run/saves/新的世界 (1)/poi/r.-1.0.mca
+/run/saves/新的世界 (1)/region/r.-1.0.mca
+/run/saves/新的世界 (2)/entities/r.-1.0.mca
+/run/saves/新的世界 (2)/poi/r.-1.0.mca
+/run/saves/新的世界 (2)/region/r.-1.0.mca
+/run/saves/新的世界3/entities/r.-1.0.mca
+/run/saves/新的世界3/poi/r.-1.0.mca
+/run/saves/新的世界3/region/r.-1.0.mca
+/run/saves/新的世界 (2)/region/r.-1.1.mca
+/run/saves/新的世界3/region/r.-1.1.mca
+/run/saves/新的世界 (1)/entities/r.-1.-1.mca
+/run/saves/新的世界 (1)/poi/r.-1.-1.mca
+/run/saves/新的世界 (1)/region/r.-1.-1.mca
+/run/saves/新的世界 (2)/entities/r.-1.-1.mca
+/run/saves/新的世界 (2)/poi/r.-1.-1.mca
+/run/saves/新的世界 (2)/region/r.-1.-1.mca
+/run/saves/新的世界3/entities/r.-1.-1.mca
+/run/saves/新的世界3/poi/r.-1.-1.mca
+/run/saves/新的世界3/region/r.-1.-1.mca
+/run/saves/新的世界3/entities/r.-1.-2.mca
+/run/saves/新的世界3/poi/r.-1.-2.mca
+/run/saves/新的世界3/region/r.-1.-2.mca
+/run/saves/新的世界3/poi/r.-2.0.mca
+/run/saves/新的世界3/region/r.-2.0.mca
+/run/saves/新的世界3/region/r.-2.1.mca
+/run/saves/新的世界3/entities/r.-2.-1.mca
+/run/saves/新的世界3/poi/r.-2.-1.mca
+/run/saves/新的世界3/region/r.-2.-1.mca
+/run/saves/新的世界3/entities/r.-2.-2.mca
+/run/saves/新的世界3/poi/r.-2.-2.mca
+/run/saves/新的世界3/region/r.-2.-2.mca
+/run/saves/新的世界 (1)/data/raids.dat
+/run/saves/新的世界 (1)/DIM-1/data/raids.dat
+/run/saves/新的世界 (2)/data/raids.dat
+/run/saves/新的世界 (2)/DIM-1/data/raids.dat
+/run/saves/新的世界3/data/raids.dat
+/run/saves/新的世界3/DIM-1/data/raids.dat
+/run/saves/新的世界 (1)/DIM1/data/raids_end.dat
+/run/saves/新的世界 (2)/DIM1/data/raids_end.dat
+/run/saves/新的世界3/DIM1/data/raids_end.dat
+/run/saves/新的世界 (1)/data/random_sequences.dat
+/run/saves/新的世界 (2)/data/random_sequences.dat
+/run/saves/新的世界3/data/random_sequences.dat
+/run/saves/新的世界 (1)/session.lock
+/run/saves/新的世界 (2)/session.lock
+/run/saves/新的世界3/session.lock
+/run/GeoTexture Debug Printouts/textures.entity.bat.png
+/run/GeoTexture Debug Printouts/textures.entity.bat_glowmask.png
+/.idea/uiDesigner.xml
+/run/usercache.json
+/.idea/vcs.xml
