@@ -4,6 +4,7 @@ import cn.m1racleur.miraclerpg.ArmorReg.AusterityReg;
 import cn.m1racleur.miraclerpg.BlocksReg.OreBlock;
 import cn.m1racleur.miraclerpg.entity.ModEntities;
 import cn.m1racleur.miraclerpg.entity.ModEntity;
+import cn.m1racleur.miraclerpg.gen.WorldGenReg;
 import cn.m1racleur.miraclerpg.itemGroupReg.RPGitemGroup;
 import cn.m1racleur.miraclerpg.itemGroupReg.SimpleItemsGroupReg;
 import cn.m1racleur.miraclerpg.itemRegister.*;
@@ -71,6 +72,8 @@ public class MiracleRPG implements ModInitializer {
 
         FabricDefaultAttributeRegistry.register(ModEntities.modEntity, ModEntity.setAttribute());
         LOGGER.info("entities loading completed");
+
+        WorldGenReg.addWorldGen();//实体世界生成
 
         return true;
     }

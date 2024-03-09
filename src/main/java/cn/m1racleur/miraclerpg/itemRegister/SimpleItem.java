@@ -75,10 +75,14 @@ public class SimpleItem {
         Registry.register(Registries.ITEM, new Identifier("miraclerpg", "ziranjinghua"), ziRanJingHua);
 
         Registry.register(Registries.ITEM, new Identifier("miraclerpg", "jingyanka"), jingyanka);
+
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "liujinding"), liujinding);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "ziranding"), ziranding);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "xuancaishi"), xuancaishi);
+        Registry.register(Registries.ITEM, new Identifier("miraclerpg", "qiangweiding"), qiangweiding);
     }
 
     public static final Item jingyanka = new Item(new FabricItemSettings().maxCount(64));
-
     public static final Item buRongBing = new Item(new FabricItemSettings().maxCount(64));
     public static final Item chiLun0 = new Item(new FabricItemSettings().maxCount(64));
     public static final Item chilun1 = new Item(new FabricItemSettings().maxCount(64));
@@ -140,4 +144,8 @@ public class SimpleItem {
     public static final Item yueGuangShi = new Item(new FabricItemSettings().maxCount(64));
     public static final Item ziJingShi = new Item(new FabricItemSettings().maxCount(64));
     public static final Item ziRanJingHua = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item liujinding = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item ziranding = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item xuancaishi = new Item(new FabricItemSettings().maxCount(64));
+    public static final Item qiangweiding = new Item(new FabricItemSettings().maxCount(64));
 }

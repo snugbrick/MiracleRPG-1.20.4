@@ -9,11 +9,11 @@ public class MultiThread extends Thread {
         new Thread(tasks).start();
     }
 
-    public void runTasksLate(Runnable tasks, int lateSec) {
+    public void runTasksLate(Runnable tasks, int tick) {
         Thread thread = new Thread(() -> {
             tasks.run();
             try {
-                Thread.sleep(lateSec * 1000L);//转换为游戏刻
+                Thread.sleep(tick * 1000L);//转换为游戏刻
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
