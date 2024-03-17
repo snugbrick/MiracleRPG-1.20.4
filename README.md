@@ -1,5 +1,5 @@
 # MiracleRPG
-author: RuinFlowLight
+A Minecraft Mod
 
 ## How to build
 fir: run `gradle runDatagen`<br>
