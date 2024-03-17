@@ -14,7 +14,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "cn.m1racleur.miraclerpg.client.MiracleRPGClient"
+      "cn.m1racleur.miraclerpg.MiracleRPGClient"
     ],
     "main": [
       "cn.m1racleur.miraclerpg.MiracleRPG"

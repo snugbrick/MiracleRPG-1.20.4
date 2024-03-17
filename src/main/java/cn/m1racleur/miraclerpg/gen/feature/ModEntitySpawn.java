@@ -16,9 +16,9 @@ import net.minecraft.world.biome.BiomeKeys;
 public class ModEntitySpawn {
     public static void addEntitySpawn() {
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.DESERT),
-                SpawnGroup.MONSTER, ModEntities.modEntity, 50, 1, 1);
+                SpawnGroup.MONSTER, ModEntities.baoxiangguai, 50, 1, 1);
 
-        SpawnRestriction.register(ModEntities.modEntity,SpawnRestriction.Location.ON_GROUND,
+        SpawnRestriction.register(ModEntities.baoxiangguai,SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);
     }
 }

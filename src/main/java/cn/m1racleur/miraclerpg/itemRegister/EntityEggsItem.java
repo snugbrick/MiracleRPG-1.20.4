@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
  */
 public class EntityEggsItem {
     public static final Item CHOMPER_SPAWN_EGG = registerItem("baoxiangguai_spawn_egg",
-            new SpawnEggItem(ModEntities.modEntity,0x22b341,0x19732e,
+            new SpawnEggItem(ModEntities.baoxiangguai,0x22b341,0x19732e,
                     new FabricItemSettings()));
 
     private static Item registerItem(String name,Item item){

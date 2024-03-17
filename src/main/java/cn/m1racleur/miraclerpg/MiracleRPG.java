@@ -70,7 +70,7 @@ public class MiracleRPG implements ModInitializer {
 
         Item item = EntityEggsItem.CHOMPER_SPAWN_EGG;
 
-        FabricDefaultAttributeRegistry.register(ModEntities.modEntity, BaoxiangguaiEntity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.baoxiangguai, BaoxiangguaiEntity.setAttribute());
         LOGGER.info("entities loading completed");
 
         WorldGenReg.addWorldGen();//实体世界生成

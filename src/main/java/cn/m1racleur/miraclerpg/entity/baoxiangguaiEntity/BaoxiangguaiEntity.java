@@ -35,9 +35,9 @@ public class BaoxiangguaiEntity extends HostileEntity implements GeoEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
-        this.goalSelector.add(1, new MeleeAttackGoal(this, 0.3D, false));
-        this.goalSelector.add(1, new WanderAroundGoal(this, 0.3F, 1));
-        this.goalSelector.add(1, new LookAroundGoal(this));
+        this.goalSelector.add(2, new MeleeAttackGoal(this, 0.3D, false));
+        this.goalSelector.add(3, new WanderAroundGoal(this, 0.3F, 1));
+        this.goalSelector.add(3, new LookAroundGoal(this));
 
         this.goalSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
