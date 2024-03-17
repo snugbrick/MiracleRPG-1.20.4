@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zidan6",
+				"texture_width": 41,
+				"texture_height": 41,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-20, -20, -11], "size": [41, 41, 0], "inflate": -11, "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

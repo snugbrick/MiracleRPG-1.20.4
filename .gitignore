@@ -1,6 +1,8 @@
 # 项目排除路径
 /.gradle/
 /build/
+/run/
+/.idea/
 /.idea/.gitignore
 /run/saves/新的世界 (1)/playerdata/0ef61a2a-d91b-37b4-a10d-af67b917d543.dat
 /run/saves/新的世界 (1)/advancements/0ef61a2a-d91b-37b4-a10d-af67b917d543.json
@@ -187,3 +189,6 @@
 /.idea/uiDesigner.xml
 /run/usercache.json
 /.idea/vcs.xml
+/run/logs/2024-03-10-1.log.gz
+/run/logs/2024-03-11-1.log.gz
+/.idea/aws.xml

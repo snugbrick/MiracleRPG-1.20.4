@@ -1,0 +1,146 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lueduozhe.attack": {
+			"loop": true,
+			"animation_length": 4.45833,
+			"bones": {
+				"leftArm": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": [3.68, 0, 0],
+						"0.875": [61.18049, 0, 0],
+						"1.7917": [-33.82, 0, 0],
+						"2.6667": [56.18, 0, 0],
+						"3.5833": [-118.82, 0, 0],
+						"4.4583": [6.18, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": [
+						"(-108 + math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (math.sin(variable.attack_time * 180.0) * 126.05 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0)) * 22.92)",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.lueduozhe.hand_attack": {
+			"loop": true,
+			"bones": {
+				"leftarm": {
+					"rotation": [
+						"(-108 + math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (math.sin(variable.attack_time * 180.0) * 126.05 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0)) * 22.92)",
+						0,
+						0
+					]
+				},
+				"rightarm": {
+					"rotation": [
+						"(-108 + math.cos(query.life_time * 20.0 * 3.84) * 2.87) + (math.sin(variable.attack_time * 180.0) * 126.05 - (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0)) * 22.92)",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.lueduozhe.base": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"arms": {
+					"rotation": ["-42.97 - this", 0, 0],
+					"position": [0, "-3.0 - this", "-1.0 - this"]
+				},
+				"leftArm": {
+					"rotation": ["math.cos(query.life_time * 20.0 * 3.84) * 2.87", -9, "-1 * (math.cos(query.life_time * 20.0 * 5.16) * 2.87 + 2.87)"]
+				},
+				"rightArm": {
+					"rotation": ["math.cos(query.life_time * 20.0 * 3.84) * 2.87", 9, "math.cos(query.life_time * 20.0 * 5.16) * 2.87 + 2.87"]
+				},
+				"rightItem": {
+					"scale": "query.is_angry ? 1.0 : 0.0"
+				},
+				"leftItem": {
+					"scale": "query.is_angry ? 1.0 : 0.0"
+				},
+				"head": {
+					"position": [0, 0, 0]
+				},
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 360, 0]
+					}
+				},
+				"bei1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 2, 0],
+						"2.0": [0, 0, 0],
+						"3.0": [0, 2, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"bei2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"2.0": [0, -2, 0],
+						"3.0": [0, 0, 0],
+						"4.0": [0, -2, 0]
+					}
+				},
+				"bei3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 2, 0],
+						"2.0": [0, -2, 0],
+						"3.0": [0, -4, 0],
+						"4.0": [0, -2, 0]
+					}
+				},
+				"bei4": {
+					"position": {
+						"0.0": [0, -2, 0],
+						"1.0": [0, 0, 0],
+						"2.0": [0, -2, 0],
+						"3.0": [0, -5, 0],
+						"4.0": [0, -3, 0]
+					}
+				}
+			}
+		},
+		"animation.lueduozhe.riding.arms": {
+			"loop": true,
+			"bones": {
+				"leftarm": {
+					"rotation": [-36, 0, 0]
+				}
+			}
+		},
+		"animation.lueduozhe.riding.legs": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": ["-72.0 - this", "18.0 - this", "-this"]
+				},
+				"leg1": {
+					"rotation": ["-72.0 - this", "-18.0 - this", "-this"]
+				}
+			}
+		},
+		"animation.lueduozhe.walk": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": ["(math.cos(query.modified_distance_moved * 38.17) * 80.21) * query.modified_move_speed * 0.5", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(math.cos(query.modified_distance_moved * 38.17 + 180) * 80.21) * query.modified_move_speed * 0.5", 0, 0]
+				}
+			}
+		}
+	}
+}

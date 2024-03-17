@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bingshuangjia.new": {
+			"animation_length": 8,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"8.0": [0, 0, -360]
+					}
+				}
+			}
+		}
+	}
+}

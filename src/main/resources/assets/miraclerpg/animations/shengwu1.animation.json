@@ -1,0 +1,96 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.shengwu1.casting": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"arms": {
+					"scale": 0
+				},
+				"leftArm": {
+					"rotation": ["math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "-135.0 - this"],
+					"scale": 1
+				},
+				"rightArm": {
+					"rotation": ["math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "135.0 - this"],
+					"scale": 1
+				},
+				"zhen": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"2.0": [0, 39, 0],
+						"4.0": [0, -3, 0]
+					}
+				}
+			}
+		},
+		"animation.shengwu1.casting.v1.0": {
+			"loop": true,
+			"bones": {
+				"leftarm": {
+					"position": ["5.0 - this", 0, "-this"],
+					"rotation": ["math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "-135.0 - this"]
+				},
+				"rightarm": {
+					"position": ["-5.0 - this", 0, "-this"],
+					"rotation": ["math.cos(query.life_time * 763.4) * 14.3239 - this", "-this", "135.0 - this"]
+				}
+			}
+		},
+		"animation.shengwu1.general": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"arms": {
+					"rotation": ["-42.97 - this", "- this", "- this"],
+					"position": [0, "-3.0 - this", "-1.0 - this"],
+					"scale": 1
+				},
+				"leftArm": {
+					"scale": 0
+				},
+				"rightArm": {
+					"scale": 0
+				},
+				"zhen": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [0, -360, 0]
+					}
+				}
+			}
+		},
+		"animation.shengwu1.move": {
+			"loop": true,
+			"animation_length": 4.1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(math.cos(query.anim_time * 38.17) * 40.0) - this", "-this", 0]
+				},
+				"leg1": {
+					"rotation": ["(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", "-this", 0]
+				},
+				"bb_main": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": [0, 0, 0.01],
+						"1.0": [0, 0, 87.5],
+						"2.0": [0, 0, 175],
+						"3.0": [0, 0, 267.5],
+						"4.0": [0, 0, 360]
+					}
+				},
+				"zhen": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.1": [0, -360, 0]
+					}
+				}
+			}
+		}
+	}
+}

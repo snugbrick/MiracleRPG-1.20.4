@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.shengwu2.general": {
+			"loop": true,
+			"bones": {
+				"nose": {
+					"rotation": [
+						"(variable.isholdingitem ? -25.7831 : (math.sin(query.life_time * 57.296) * 4.5)) - this",
+						0,
+						"(math.cos(query.life_time * 57.296) * 2.5) - this"
+					]
+				}
+			}
+		},
+		"animation.shengwu2.villager_general": {
+			"loop": true,
+			"bones": {
+				"arms": {
+					"position": [0, -1, -1],
+					"rotation": ["-42.97 - this", 0, 0]
+				}
+			}
+		},
+		"animation.shengwu2.move": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": ["(math.cos(query.anim_time * 38.17) * 40.0) - this", "-this", 0]
+				},
+				"leg1": {
+					"rotation": ["(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", "-this", 0]
+				}
+			}
+		}
+	}
+}
