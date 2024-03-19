@@ -1,7 +1,5 @@
-package cn.m1racleur.miraclerpg.entity.bianfu;
+package cn.m1racleur.miraclerpg.entity._3m20d.bianfu;
 
-import cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity.BaoxiangguaiEntity;
-import cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity.BaoxiangguaiEntityModels;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;

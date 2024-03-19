@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity.binglang;
+package cn.m1racleur.miraclerpg.entity._3m21d.boss3;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -16,12 +16,12 @@ import software.bernie.geckolib.core.object.PlayState;
 
 /**
  * @author MiracleUR -> github.com/snugbrick
- * @version 1.0.0 2024.03.17 14:05
+ * @version 1.0.0 2024.03.20 01:01
  */
-public class BinglangEntity extends HostileEntity implements GeoEntity {
+public class Boss3Entity extends HostileEntity implements GeoEntity {
     private final AnimatableInstanceCache instanceCache = new SingletonAnimatableInstanceCache(this);
 
-    public BinglangEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public Boss3Entity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -49,11 +49,11 @@ public class BinglangEntity extends HostileEntity implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
         if (tAnimationState.isMoving()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.binglang.walking",
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.boss3.walk",
                     Animation.LoopType.LOOP));
             return PlayState.CONTINUE;
         }
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.binglang.sitting",
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.boss3.flower",
                 Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }

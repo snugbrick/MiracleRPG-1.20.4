@@ -3,7 +3,13 @@ package cn.m1racleur.miraclerpg;
 import cn.m1racleur.miraclerpg.ArmorReg.AusterityReg;
 import cn.m1racleur.miraclerpg.BlocksReg.OreBlock;
 import cn.m1racleur.miraclerpg.entity.ModEntities;
-import cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity.BaoxiangguaiEntity;
+import cn.m1racleur.miraclerpg.entity._3m20d.baoxiangguaiEntity.BaoxiangguaiEntity;
+import cn.m1racleur.miraclerpg.entity._3m20d.bianfu.BianfuEntity;
+import cn.m1racleur.miraclerpg.entity._3m20d.binglang.BinglangEntity;
+import cn.m1racleur.miraclerpg.entity._3m20d.boss1.Boss1Entity;
+import cn.m1racleur.miraclerpg.entity._3m20d.boss2.Boss2Entity;
+import cn.m1racleur.miraclerpg.entity._3m21d.boss3.Boss3Entity;
+import cn.m1racleur.miraclerpg.entity._3m21d.boss4.Boss4Entity;
 import cn.m1racleur.miraclerpg.gen.WorldGenReg;
 import cn.m1racleur.miraclerpg.itemGroupReg.RPGitemGroup;
 import cn.m1racleur.miraclerpg.itemGroupReg.SimpleItemsGroupReg;
@@ -71,6 +77,12 @@ public class MiracleRPG implements ModInitializer {
         Item item = EntityEggsItem.CHOMPER_SPAWN_EGG;
 
         FabricDefaultAttributeRegistry.register(ModEntities.baoxiangguai, BaoxiangguaiEntity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.bianfu, BianfuEntity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.binglang, BinglangEntity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.boss1, Boss1Entity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.boss2, Boss2Entity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.boss3, Boss3Entity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.boss4, Boss4Entity.setAttribute());
         LOGGER.info("entities loading completed");
 
         WorldGenReg.addWorldGen();//实体世界生成

@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity.binglang;
+package cn.m1racleur.miraclerpg.entity._3m20d.binglang;
 
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;

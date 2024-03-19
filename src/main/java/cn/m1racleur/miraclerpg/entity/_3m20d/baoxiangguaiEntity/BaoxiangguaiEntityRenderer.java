@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity;
+package cn.m1racleur.miraclerpg.entity._3m20d.baoxiangguaiEntity;
 
 
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -24,7 +24,7 @@ public class BaoxiangguaiEntityRenderer extends GeoEntityRenderer<BaoxiangguaiEn
 
     @Override
     public void render(BaoxiangguaiEntity entity, float entityYaw, float partialTick, MatrixStack poseStack, VertexConsumerProvider bufferSource, int packedLight) {
-        poseStack.scale(0.8f,0.8f,0.8f);
+        poseStack.scale(1.2f,1.2f,1.2f);
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
     }
 }

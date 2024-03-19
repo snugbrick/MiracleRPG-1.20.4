@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity.binglang;
+package cn.m1racleur.miraclerpg.entity._3m20d.binglang;
 
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
@@ -23,7 +23,7 @@ public class BinglangEntityRenderer extends GeoEntityRenderer<BinglangEntity> {
 
     @Override
     public void render(BinglangEntity entity, float entityYaw, float partialTick, MatrixStack poseStack, VertexConsumerProvider bufferSource, int packedLight) {
-        poseStack.scale(0.8f, 0.8f, 0.8f);
+        poseStack.scale(0.8f, 1.0f, 0.8f);
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
     }
 }

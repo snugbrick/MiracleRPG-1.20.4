@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity;
+package cn.m1racleur.miraclerpg.entity._3m21d.boss4;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -16,12 +16,12 @@ import software.bernie.geckolib.core.object.PlayState;
 
 /**
  * @author MiracleUR -> github.com/snugbrick
- * @version 1.0.0 2024.03.06 12:07
+ * @version 1.0.0 2024.03.20 01:05
  */
-public class BaoxiangguaiEntity extends HostileEntity implements GeoEntity {
+public class Boss4Entity extends HostileEntity implements GeoEntity {
     private final AnimatableInstanceCache instanceCache = new SingletonAnimatableInstanceCache(this);
 
-    public BaoxiangguaiEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public Boss4Entity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -49,11 +49,11 @@ public class BaoxiangguaiEntity extends HostileEntity implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
         if (tAnimationState.isMoving()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.baoxiangguai1.walk",
+            tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.boss4.walk",
                     Animation.LoopType.LOOP));
             return PlayState.CONTINUE;
         }
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.baoxiangguai1.idle",
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.boss4.idle",
                 Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }

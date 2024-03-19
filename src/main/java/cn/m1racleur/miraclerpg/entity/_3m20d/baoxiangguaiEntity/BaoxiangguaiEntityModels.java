@@ -1,4 +1,4 @@
-package cn.m1racleur.miraclerpg.entity.baoxiangguaiEntity;
+package cn.m1racleur.miraclerpg.entity._3m20d.baoxiangguaiEntity;
 
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;
