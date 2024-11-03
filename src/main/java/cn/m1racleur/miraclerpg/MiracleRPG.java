@@ -42,7 +42,6 @@ public class MiracleRPG implements ModInitializer {
             LOGGER.info("MiracleRPG has been initialized!");
         }
 
-
     }
 
     private boolean init() {
