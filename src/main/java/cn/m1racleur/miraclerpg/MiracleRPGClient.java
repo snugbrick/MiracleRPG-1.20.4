@@ -8,13 +8,14 @@ import cn.m1racleur.miraclerpg.entity._3m20d.boss1.Boss1EntityRenderer;
 import cn.m1racleur.miraclerpg.entity._3m20d.boss2.Boss2EntityRenderer;
 import cn.m1racleur.miraclerpg.entity._3m21d.boss3.Boss3EntityRenderer;
 import cn.m1racleur.miraclerpg.entity._3m21d.boss4.Boss4EntityRenderer;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper.CreeperEntity;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper.CreeperEntityRenderer;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper1.Creeper1Entity;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper1.Creeper1EntityRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.entity.EntityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.lang.reflect.Field;
 
 /**
  * @author MiracleUR -> github.com/snugbrick
@@ -32,7 +33,14 @@ public class MiracleRPGClient implements ClientModInitializer {
         }
     }
 
-    private <E> boolean init() {
+    private boolean init() {
+        entityReg();
+        LOGGER.info("entities loading completed");
+
+        return true;
+    }
+
+    private void entityReg() {
         EntityRendererRegistry.register(ModEntities.baoxiangguai, BaoxiangguaiEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.bianfu, BianfuEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.binglang, BinglangEntityRenderer::new);
@@ -40,8 +48,7 @@ public class MiracleRPGClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.boss2, Boss2EntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.boss3, Boss3EntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.boss4, Boss4EntityRenderer::new);
-        LOGGER.info("entities loading completed");
-
-        return true;
+        EntityRendererRegistry.register(ModEntities.creeper, CreeperEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.creeper1, Creeper1EntityRenderer::new);
     }
 }

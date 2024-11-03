@@ -7,6 +7,8 @@ import cn.m1racleur.miraclerpg.entity._3m20d.boss1.Boss1Entity;
 import cn.m1racleur.miraclerpg.entity._3m20d.boss2.Boss2Entity;
 import cn.m1racleur.miraclerpg.entity._3m21d.boss3.Boss3Entity;
 import cn.m1racleur.miraclerpg.entity._3m21d.boss4.Boss4Entity;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper.CreeperEntity;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper1.Creeper1Entity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -47,5 +49,13 @@ public class ModEntities {
     public static final EntityType<Boss4Entity> boss4 = Registry.register(Registries.ENTITY_TYPE,
             new Identifier("miraclerpg", "boss4"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, Boss4Entity::new)
+                    .dimensions(EntityDimensions.fixed(0.8F, 0.8F)).build());
+    public static final EntityType<CreeperEntity> creeper = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier("miraclerpg", "creeper"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, CreeperEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.8F, 0.8F)).build());
+    public static final EntityType<Creeper1Entity> creeper1 = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier("miraclerpg", "creeper"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, Creeper1Entity::new)
                     .dimensions(EntityDimensions.fixed(0.8F, 0.8F)).build());
 }

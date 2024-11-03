@@ -10,6 +10,8 @@ import cn.m1racleur.miraclerpg.entity._3m20d.boss1.Boss1Entity;
 import cn.m1racleur.miraclerpg.entity._3m20d.boss2.Boss2Entity;
 import cn.m1racleur.miraclerpg.entity._3m21d.boss3.Boss3Entity;
 import cn.m1racleur.miraclerpg.entity._3m21d.boss4.Boss4Entity;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper.CreeperEntity;
+import cn.m1racleur.miraclerpg.entity._3m21d.creeper1.Creeper1Entity;
 import cn.m1racleur.miraclerpg.gen.WorldGenReg;
 import cn.m1racleur.miraclerpg.itemGroupReg.RPGitemGroup;
 import cn.m1racleur.miraclerpg.itemGroupReg.SimpleItemsGroupReg;
@@ -39,6 +41,7 @@ public class MiracleRPG implements ModInitializer {
         if (initRet) {
             LOGGER.info("MiracleRPG has been initialized!");
         }
+
 
     }
 
@@ -76,6 +79,15 @@ public class MiracleRPG implements ModInitializer {
 
         Item item = EntityEggsItem.CHOMPER_SPAWN_EGG;
 
+        entityReg();
+        LOGGER.info("entities loading completed");
+
+        WorldGenReg.addWorldGen();//实体世界生成
+
+        return true;
+    }
+
+    private void entityReg() {
         FabricDefaultAttributeRegistry.register(ModEntities.baoxiangguai, BaoxiangguaiEntity.setAttribute());
         FabricDefaultAttributeRegistry.register(ModEntities.bianfu, BianfuEntity.setAttribute());
         FabricDefaultAttributeRegistry.register(ModEntities.binglang, BinglangEntity.setAttribute());
@@ -83,10 +95,7 @@ public class MiracleRPG implements ModInitializer {
         FabricDefaultAttributeRegistry.register(ModEntities.boss2, Boss2Entity.setAttribute());
         FabricDefaultAttributeRegistry.register(ModEntities.boss3, Boss3Entity.setAttribute());
         FabricDefaultAttributeRegistry.register(ModEntities.boss4, Boss4Entity.setAttribute());
-        LOGGER.info("entities loading completed");
-
-        WorldGenReg.addWorldGen();//实体世界生成
-
-        return true;
+        FabricDefaultAttributeRegistry.register(ModEntities.creeper, CreeperEntity.setAttribute());
+        FabricDefaultAttributeRegistry.register(ModEntities.creeper1, Creeper1Entity.setAttribute());
     }
 }
